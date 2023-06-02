@@ -1,26 +1,22 @@
 body{
-    width: 70%;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    margin: auto;
 }
 .head-meno{
     display: flex;
     justify-content:space-between;
     padding: 5px; 
-    
+    padding-bottom: 0px;
+  border-collapse: collapse;
 }
 .matn{
-    width: 48%;
-    position: absolute;
-    z-index: +1;
+    background-color: #3EBFFF;
 }
 .img-porteghal{
-    position: relative;
     width: 100%;
-    height: 300px;
+    height: 200px;
 }
 .meno-keys{
-    font-size: 20px;
+    font-size: 10px;
     display: flex;
     justify-content: space-between;
     color: white;
@@ -43,69 +39,81 @@ color: white;
 }
 .p-title{
     color: white;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
 }
 .egg-row{
     display: flex;
-
+}
+.text-box{
+    max-height: 100px;
+    width: 100%;
+}
+.vasat{
+margin: auto;
+padding: 70px;
+max-height: 100px;
 }
 .title{
-    font-size: 40px;
     text-align: center;
-    margin-top:40px ;
-    margin-bottom: 10px;
 }
 .text-egg{
     color: rgb(164, 163, 163);
-   padding-left: 50px;
-    margin: auto;
-    box-sizing: border-box;
 }
 .text{
-    margin: auto;
-    padding-left: 30px;
     margin-top:20px ;
 }
-.text:hover{
+.line-under:hover{
     cursor: pointer;
+    border: 4px  hsl(51, 100%, 49%) solid;
 }
 .line-under{
-    margin-left: 30px;
     border: 4px rgb(242, 188, 88) solid;
     border-radius: 5px;
     color:wheat;
     width: 90px;
+    margin-top: -3px;
 }
 .glass-row{
     display: flex;
 }
 .line-under-1{
-    margin-left: 30px;
     border: 4px rgb(227, 100, 121) solid;
     border-radius: 5px;
     color:wheat;
     width: 90px;
+    margin-top: -3px;
+}
+.line-under-1:hover{
+    cursor: pointer;
+    border: 4px   hsl(7, 99%, 70%) solid;
 }
 .text-box{
     width: 50%;
 }
+.aks{
+    width: 50%;
+}
 .orange-row{
     display: flex;
+    margin-bottom:-50px;
 }
 .img-gilas{
-    position: relative;
-    width: 100%;
-    
+    width:100%; 
 }
 .matn-1{
-    position: absolute;
-    z-index: +1;
-padding: 5px;
-margin-top: -150px;
+background-color:#A2DCCD;
+width: 50%;
+}
+.matn-2{
+   background-color:  #62CCFE;
+   width: 50%;
+}
+.text-orange{
+    display: flex;
+    margin-top: 0px;
 }
 .orange-title{
-    width: 60%;
     text-align: center;
     font-size: 20px;
     color: rgb(67, 67, 67);
@@ -114,6 +122,87 @@ margin-top: -150px;
     font-size: 15px;
     text-align: center;
     padding: 10px;
-    width: 25%;
     color: rgb(49, 46, 46);
+}
+.orange{
+    border-collapse: collapse;
+}
+.about-title{
+    color: rgb(164, 163, 163);
+    text-align: center;
+    margin-top: 100px;
+}
+.about-boxes{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.about-aks{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+.aks-center{
+   text-align: center;
+   margin: 20px;
+}
+.about-subtitle{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: rgb(164, 163, 163);
+    padding-bottom: 50px;
+}
+.about-name{
+    text-align: center;
+}
+.job{
+    text-align: center;
+    color: rgb(202, 202, 202);
+    margin-top: 10px;
+margin-bottom: 100px;
+}
+.picturs-row{
+    display: flex;
+    width: 100%;
+}
+.pictur{
+    width: 100%;
+}
+.footer{
+    background-color: hsl(168, 34%, 41%);
+}
+.footer-title{
+    text-align: center;
+    padding: 30px;
+}
+.footer-meno{
+    display: flex;
+   justify-content: center;
+   gap: 40px;
+    margin: 20px;
+}
+.footer-icone{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+.footer-menos:hover{
+    cursor: pointer;
+}
+.footer-icones{
+    cursor: pointer;
+}
+@media only screen and (max-width:365px){
+.text-box,.aks,.about-box,.egg-row,.glass-row,.about-boxes,.head-meno{
+    display: block;
+}
+body{
+    width: 40%;
+    text-align: center;
+}
+
 }
